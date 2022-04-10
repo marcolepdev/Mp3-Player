@@ -38,7 +38,7 @@ input.addEventListener("change", (event)=>{
             document.querySelector('.img').style.background = "none";
             document.querySelector('.img').style.backgroundColor= "#000";            
             document.querySelector('.img').style.zIndex = '100';
-            document.querySelector('.img').textContent= "N / A";
+            document.querySelector('.img').innerHtml = "N / A";
 
         }else{
             let data = tag.tags.picture.data;
