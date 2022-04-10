@@ -132,17 +132,31 @@ border:1px solid #fff;
         position: relative;
         top:3vh;
 
+button{
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+    outline:none;
+    color:#fff;
+    cursor: pointer;
+    position: relative;
+    top:1vh;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+input[type=file]{
 
-        input[type=file]{
+    color:#fff;
 
-            position: relative;
-            top:5vh;
-            display: block;
-            margin: 0 auto;
-            color:transparent;
-            width:90px;
-        }
-
+    position: relative;
+    top:2vh;
+    display: none;
+    margin: 0 auto;
+    color:transparent;
+    width:90px;
+}
 
 
     }

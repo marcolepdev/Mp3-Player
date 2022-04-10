@@ -5,6 +5,12 @@ const input = document.querySelector('#audio-upload');
 const audio = document.querySelector('audio');
 
 
+//fake button with input "type file" function
+document.querySelector('button').addEventListener('click', () => {
+    document.querySelector('input[type="file"]').click();
+  });
+
+
 
 //load file audio and play it
 async function getAudio() {

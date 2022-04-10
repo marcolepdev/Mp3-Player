@@ -104,10 +104,25 @@
   position: relative;
   top: 3vh;
 }
-.main-container .load-file-container input[type=file] {
-  position: relative;
-  top: 5vh;
+.main-container .load-file-container button {
+  padding: 5px;
+  margin: 0 auto;
   display: block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  top: 1vh;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.main-container .load-file-container input[type=file] {
+  color: #fff;
+  position: relative;
+  top: 2vh;
+  display: none;
   margin: 0 auto;
   color: transparent;
   width: 90px;
