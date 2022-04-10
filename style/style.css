@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 40%;
+  height: 71vh;
+  background-color: #222548;
+  margin: 0 auto;
+  position: relative;
+  top: 15vh;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-box-shadow: 4px 5px 11px -1px rgba(0, 0, 0, 0.47);
+  box-shadow: 4px 5px 11px -1px rgba(0, 0, 0, 0.47);
+  border-radius: 15pt;
+}
+.main-container h2 {
+  text-align: center;
+  font-family: sans-serif;
+  position: relative;
+  top: 2vh;
+  color: #fff;
+}
+.main-container .img-outer-container {
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto;
+  position: relative;
+  top: 3vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-container .img-outer-container .img-container {
+  margin: 0 auto;
+  width: 50%;
+  height: 25vh;
+  position: relative;
+  top: 1vh;
+  border-radius: 50%;
+}
+.main-container .img-outer-container .img-container .img {
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 60%;
+  height: 100%;
+  object-fit: contain;
+  -webkit-box-shadow: 0px 10px 50px 0px rgba(248, 248, 248, 0.41);
+  box-shadow: 0px 10px 50px 0px rgba(248, 248, 248, 0.41);
+  border: 1px solid #fff;
+}
+.main-container .img-outer-container .info-music-container {
+  width: 60%;
+  height: 9vh;
+  margin: 0 auto;
+  position: relative;
+  top: 3.5vh;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.main-container .img-outer-container .info-music-container h2 {
+  margin: 0 auto;
+  font-family: "Roboto";
+  position: relative;
+  top: 1vh;
+  color: #fff;
+}
+.main-container .img-outer-container .info-music-container p {
+  position: relative;
+  font-family: "Roboto";
+  top: 2vh;
+  margin: 0 auto;
+  color: #fff;
+}
+.main-container .controls-container {
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  top: 3vh;
+}
+.main-container .controls-container .buttons-container {
+  width: 450px;
+  height: 70px;
+  margin: 0 auto;
+  position: relative;
+  top: 3vh;
+}
+.main-container .controls-container .buttons-container audio {
+  display: block;
+  margin: 0 auto;
+}
+.main-container .load-file-container {
+  width: 100%;
+  height: 14.1vh;
+  position: relative;
+  top: 3vh;
+}
+.main-container .load-file-container input[type=file] {
+  position: relative;
+  top: 5vh;
+  display: block;
+  margin: 0 auto;
+  color: transparent;
+  width: 71px;
+}
+
+@media only screen and (max-width: 415px) {
+  .main-container {
+    width: 90%;
+    height: 90vh;
+    top: 5vh;
+  }
+  .main-container h2 {
+    font-size: 1rem;
+  }
+  .main-container .img-outer-container {
+    height: 45vh;
+  }
+  .main-container .img-outer-container .img-container {
+    height: 10vh;
+    position: relative;
+    top: 2vh;
+  }
+  .main-container .img-outer-container .img-container .img {
+    width: 100%;
+    height: 25vh;
+  }
+  .main-container .img-outer-container .info-music-container {
+    position: relative;
+    top: 23vh;
+  }
+  .main-container .controls-container .buttons-container {
+    margin: 0 auto;
+    width: 200px;
+    height: 3vh;
+  }
+  .main-container .controls-container .buttons-container audio {
+    width: 200px;
+  }
+  .main-container .load-file-container {
+    height: 24vh;
+  }
+}
+@media only screen and (min-width: 351px) and (max-width: 500px) {
+  .main-container {
+    width: 90%;
+    height: 70vh;
+    top: 5vh;
+  }
+  .main-container h2 {
+    font-size: 1rem;
+  }
+  .main-container .img-outer-container .img-container .img {
+    width: 90%;
+    height: 20vh;
+    border-radius: 50%;
+    position: relative;
+    top: 5vh;
+  }
+  .main-container .img-outer-container .info-music-container {
+    position: relative;
+    top: 0;
+  }
+  .main-container .controls-container {
+    height: 15.5vh;
+  }
+  .main-container .img-outer-container {
+    margin: 0 auto;
+  }
+  .main-container .img-outer-container .img-container {
+    width: 50%;
+    height: 30vh;
+    margin: 0 auto;
+  }
+  .main-container .img-outer-container .img-container img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 1280px) {
+  .main-container {
+    width: 90%;
+    height: 70vh;
+    top: 5vh;
+  }
+  .main-container .img-outer-container .img-container .img {
+    width: 80%;
+    position: relative;
+    top: 1vh;
+  }
+  .main-container .img-outer-container .info-music-container {
+    position: relative;
+    top: 4vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
