@@ -1,23 +1,26 @@
+//variables
+
 let jsmediatags = window.jsmediatags;
 const input = document.querySelector('#audio-upload');
 const audio = document.querySelector('audio');
 
-function getAudio() {
-    
-    
+
+
+//load file audio and play it
+async function getAudio() {
+
     input.type = 'file';
     input.onchange = e => {
       var file = e.target.files[0];
-  
-      var reader = new FileReader();
-      reader.addEventListener('load', function(e) {
-        audio.src = e.target.result;
+
+        //console.log(file);
+        audio.src = URL.createObjectURL(file);
         audio.play();
-      });
-      reader.readAsDataURL(file);
-    }
-  }
-  getAudio();
+        }
+
+        }
+
+        getAudio();
 
 //load external mp3/audio file from input field
 
@@ -37,8 +40,7 @@ input.addEventListener("change", (event)=>{
             console.log('picture not available');
             document.querySelector('.img').style.background = "none";
             document.querySelector('.img').style.backgroundColor= "#000";            
-            document.querySelector('.img').style.zIndex = '100';
-            document.querySelector('.img').innerHtml = "N / A";
+            document.querySelector('.img').textContent = "N / A";
 
         }else{
             let data = tag.tags.picture.data;
@@ -50,7 +52,6 @@ input.addEventListener("change", (event)=>{
             base64String+= String.fromCharCode(data[i]);
 
         document.querySelector('.img').style.backgroundImage = `url(data:${format};base64,${window.btoa(base64String)})`;
-        document.querySelector('.img').textContent= null;
         }
         
 
@@ -80,8 +81,6 @@ input.addEventListener("change", (event)=>{
     onError: function (error){
         
         if(!file.tags){
-            console.log('tags dont exit')
-            console.log(file);
             document.querySelector('.img').style.backgroundImage ="url(../images/not-available.svg)";
             document.querySelector('.artist').textContent= "N/A";
             document.querySelector('.title').textContent= "N/A";
