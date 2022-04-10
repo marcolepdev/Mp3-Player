@@ -12,7 +12,7 @@
 .main-container{
     
     width:40%;
-    height:71vh;
+    height:80vh;
     background-color: #222548;
 
     margin: 0 auto;
@@ -133,11 +133,11 @@ border:1px solid #fff;
         top:3vh;
 
 button{
-    padding: 5px;
+    padding: 8px;
     margin: 0 auto;
     display: block;
     background-color: transparent;
-    border: none;
+    border: 1px solid #fff;
     outline:none;
     color:#fff;
     cursor: pointer;
@@ -145,6 +145,14 @@ button{
     top:1vh;
     font-size: 16px;
     letter-spacing: 1px;
+    transition: .3s;
+    border-radius: 15pt;
+
+    &:hover{
+        background-color: #fff;
+        color:#222548;
+
+    }
 }
 input[type=file]{
 
@@ -245,6 +253,11 @@ input[type=file]{
 
             height:24vh;
 
+        }
+
+        button{
+            position: relative;
+            top:10px;
         }
 
     }
