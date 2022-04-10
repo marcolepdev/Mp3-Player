@@ -35,7 +35,11 @@ input.addEventListener("change", (event)=>{
         //does picture exist or not?
         if(!tag.tags.picture){
             console.log('picture not available');
-            document.querySelector('.img').style.backgroundImage ="url(../images/not-available.svg)";
+            document.querySelector('.img').style.background = "none";
+            document.querySelector('.img').style.backgroundColor= "#000";            
+            document.querySelector('.img').style.zIndex = '100';
+            document.querySelector('.img').textContent= "N / A";
+
         }else{
             let data = tag.tags.picture.data;
             let format = tag.tags.picture.format;
@@ -46,6 +50,7 @@ input.addEventListener("change", (event)=>{
             base64String+= String.fromCharCode(data[i]);
 
         document.querySelector('.img').style.backgroundImage = `url(data:${format};base64,${window.btoa(base64String)})`;
+        document.querySelector('.img').textContent= null;
         }
         
 
