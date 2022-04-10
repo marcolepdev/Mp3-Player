@@ -39,7 +39,7 @@ input.addEventListener("change", (event)=>{
         if(!tag.tags.picture){
             console.log('picture not available');
             document.querySelector('.img').style.background = "none";
-            document.querySelector('.img').style.backgroundColor= "#000";            
+            document.querySelector('.img').style.backgroundColor= "#000";        
             document.querySelector('.img').textContent = "N / A";
 
         }else{
@@ -52,6 +52,7 @@ input.addEventListener("change", (event)=>{
             base64String+= String.fromCharCode(data[i]);
 
         document.querySelector('.img').style.backgroundImage = `url(data:${format};base64,${window.btoa(base64String)})`;
+        document.querySelector('.img').innerHTML = null;
         }
         
 

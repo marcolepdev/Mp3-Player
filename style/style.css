@@ -110,7 +110,7 @@
   display: block;
   margin: 0 auto;
   color: transparent;
-  width: 71px;
+  width: 95px;
 }
 
 @media only screen and (max-width: 415px) {
@@ -131,8 +131,8 @@
     top: 2vh;
   }
   .main-container .img-outer-container .img-container .img {
-    width: 100%;
-    height: 2vh;
+    width: 80%;
+    height: 5vh;
     text-align: center;
     color: #fff;
     font-size: 1.5rem;
@@ -181,7 +181,7 @@
   }
   .main-container .img-outer-container .info-music-container {
     position: relative;
-    top: 0;
+    top: 1rem;
   }
   .main-container .controls-container {
     height: 15.5vh;
